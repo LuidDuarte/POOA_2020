@@ -1,6 +1,4 @@
-from app import GetNews
+from app import OGlobo
 
-o_globo = GetNews(name='oglobo', 
-                  url='http://globo.com', 
-                  types=[['Principal','hui-premium__title'],['Secundário','hui-highlight-title']])
+o_globo = OGlobo()
 o_globo.write_on_csv()
